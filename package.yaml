@@ -26,7 +26,7 @@ library:
   source-dirs: src
 
 executables:
-  tworkov-exe:
+  tworkov:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -35,6 +35,9 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - tworkov
+    - diagrams
+    - diagrams-svg
+    - diagrams-lib
 
 tests:
   tworkov-test:
